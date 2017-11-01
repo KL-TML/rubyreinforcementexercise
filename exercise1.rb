@@ -2,7 +2,7 @@
 documentary = "Supersize Me"
 drama = "Girl on a Train"
 comedy = "Dumb and Dumber"
-dramedy = "Dragon tattoo"
+dramedy = "Dragon Tattoo"
 
 
 puts "Do you like documentaries? (Yes/No)"
