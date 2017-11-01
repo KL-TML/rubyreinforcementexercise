@@ -39,24 +39,17 @@ elsif
   puts "You should watch #{comedy}"
 
 elsif
-  doc_like <=3 && drama_like <=3 && comedy_like <=3
-  puts "I recommend reading a #{book}"
+   doc_like <=3 && drama_like <=3 && comedy_like <=3
+    if doc_like > drama_like && doc_like>comedy_like
+    puts "watch doc"
+    end
+    if drama_like > doc_like && drama_like > comedy_like
+     puts "watch drama"
+    end
 
-  if
-    doc_like > drama_like && comedy_like
-    puts "You can take a look at #{documentary}"
-
-  elsif
-    comedy_like > drama_like && doc_like
-    puts "Hey have a laugh at this film, #{comedy}"
-
-  elsif
-    drama_like > comedy_like && doc_like
-    puts "You can be bored out of your mind with #{drama}"
-
-  else
-    puts "You will love reading, #{book}"
-
-  end
+    if comedy_like > doc_like && comedy_like > drama_like
+     puts "watch comedy"
+    end
+    puts "I recommend reading a #{book}"
 
 end
